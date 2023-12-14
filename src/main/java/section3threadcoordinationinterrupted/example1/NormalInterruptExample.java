@@ -1,4 +1,4 @@
-package section2threadcoordinationinterrupted.example1;
+package section3threadcoordinationinterrupted.example1;
 
 public class NormalInterruptExample {
     public static void main(String [] args) {

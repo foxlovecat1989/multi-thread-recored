@@ -1,4 +1,4 @@
-package section2threadcoordinationjointhread.exec1;
+package section3threadcoordinationjointhread.exec1;
 
 import java.math.BigInteger;
 

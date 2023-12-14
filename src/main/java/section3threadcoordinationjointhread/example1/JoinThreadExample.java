@@ -1,4 +1,4 @@
-package section2threadcoordinationjointhread.example1;
+package section3threadcoordinationjointhread.example1;
 
 import java.math.BigInteger;
 import java.util.ArrayList;

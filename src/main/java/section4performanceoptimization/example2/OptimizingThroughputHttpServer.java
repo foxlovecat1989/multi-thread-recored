@@ -1,4 +1,4 @@
-package section4performanceoptimization.example1;
+package section4performanceoptimization.example2;
 
 import com.sun.net.httpserver.HttpExchange;
 import com.sun.net.httpserver.HttpHandler;

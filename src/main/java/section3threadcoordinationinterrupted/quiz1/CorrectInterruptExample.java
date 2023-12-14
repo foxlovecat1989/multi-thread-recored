@@ -1,4 +1,4 @@
-package section2threadcoordinationinterrupted.quiz1;
+package section3threadcoordinationinterrupted.quiz1;
 
 public class CorrectInterruptExample {
     public static void main(String [] args) {

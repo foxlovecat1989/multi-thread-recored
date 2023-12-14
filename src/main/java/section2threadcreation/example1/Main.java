@@ -1,4 +1,4 @@
-package section1threadcreation.example1;
+package section2threadcreation.example1;
 
 public class Main {
     public static void main(String[] args) {

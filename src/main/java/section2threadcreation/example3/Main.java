@@ -1,4 +1,4 @@
-package section1threadcreation.example3;
+package section2threadcreation.example3;
 
 import java.util.List;
 import java.util.Random;

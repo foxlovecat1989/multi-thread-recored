@@ -1,14 +1,16 @@
-package section2threadcoordinationinterrupted.example2;
+package section3threadcoordinationinterrupted.example3;
 
 import java.math.BigInteger;
 
-public class ParticularInterruptExample {
-    public static void main(String[] args) {
+public class BlockingTaskSetToDaemon {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(
-                new LongComputationTask(
+                new BlockingTaskSetToDaemon.LongComputationTask(
                         new BigInteger("200000"),
                         new BigInteger("100000000")));
+        thread.setDaemon(true);
         thread.start();
+        Thread.sleep(100);
         thread.interrupt();
     }
 
@@ -30,11 +32,6 @@ public class ParticularInterruptExample {
             BigInteger result = BigInteger.ONE;
 
             for (BigInteger i = BigInteger.ZERO; i.compareTo(power) != 0; i = i.add(BigInteger.ONE)) {
-                // !!! to check the current thread is interrupted
-                if (Thread.currentThread().isInterrupted()) {
-                    System.out.println("Prematurely interrupted computation");
-                    return BigInteger.ZERO;
-                }
                 result = result.multiply(base);
             }
 
