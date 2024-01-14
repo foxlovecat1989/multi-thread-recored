@@ -1,4 +1,4 @@
-package synchronization.utilities.phaser;
+package synchronization.utilities.phaser.exam1;
 
 import java.util.concurrent.Phaser;
 
